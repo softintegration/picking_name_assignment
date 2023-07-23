@@ -2,7 +2,7 @@
 
 {
     'name': 'picking reference assignment settings',
-    'version': '1.0.1',
+    'version': '1.0.1.1',
     'author':'Soft-integration',
     'category': 'Sales',
     'summary': 'This module allow the administrator to configure auto assignment of picking reference in validation state.',
