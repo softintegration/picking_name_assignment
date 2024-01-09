@@ -19,7 +19,7 @@ class StockPicking(models.Model):
         res = super(StockPicking, self)._action_done()
         for picking in self:
             if picking.picking_type_id.name_assignment_at_validation:
-                picking.name = picking.picking_type_id.sequence_id.next_by_id()
+                picking.name = picking.with_context(ir_sequence_date=picking.date_done).picking_type_id.sequence_id.next_by_id()
         return res
 
 
